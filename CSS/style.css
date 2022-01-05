@@ -172,6 +172,7 @@ h2 {
   text-align: center;
   font-weight: 500;
   font-family: 'Montserrat', sans-serif;
+  margin: 10px 0;
 }
 hr {
   width: 30px;
@@ -182,10 +183,10 @@ hr {
 .padding-80 {
   padding: 80px 0;
 }
-header {
+.service_header {
   padding: 0 100px;
 }
-header p {
+.service_header p {
   font-family: 'Lato', sans-serif;
   color: var(--even-lighter-grey);
   font-style: italic;
@@ -230,4 +231,39 @@ h4 {
   font-size: 18px;
   margin: 35px 0 10px;
   color: var(--dark-grey);
+}
+#portfolio {
+  background-color: var(--background-light-grey);
+}
+.portfolio_header ul {
+  margin-top: 20px;
+  list-style: none;
+  display: flex;
+  justify-content: center;
+}
+.portfolio_header a {
+  text-decoration: none;
+  color: var(--dark-grey);
+  display: inline-block;
+  text-transform: uppercase;
+  padding: 10px 15px;
+  font-size: 12px;
+  font-family: 'Lato', sans-serif;
+  font-weight: 100;
+  letter-spacing: 2px;
+  background-color: white;
+  margin: 0 10px;
+  transition: color 0.3s ease-in-out;
+}
+.portfolio_header a:hover {
+  color: var(--primary);
+}
+.portfolio_cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 10px;
+  margin-top: 40px;
+}
+.portfolio_cards img {
+  width: 100%;
 }
