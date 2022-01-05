@@ -1,0 +1,11 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+:root {
+  --primary: #ed5f5e;
+  --dark-grey: #434343;
+  --light-grey: #767676;
+  --background-light-grey: #f8f8f8;
+}
