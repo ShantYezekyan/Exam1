@@ -9,3 +9,33 @@
   --light-grey: #767676;
   --background-light-grey: #f8f8f8;
 }
+.NavBar-Big {
+  padding: 0 50px;
+  background-color: white;
+  z-index: 10000;
+  top: 0;
+  left: 0;
+  right: 0;
+  position: fixed;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.NavBar-Big ul {
+  list-style: none;
+  display: flex;
+}
+.NavBar-Big ul a {
+  display: block;
+  padding: 0 17px;
+  line-height: 70px;
+  font-size: 13px;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-family: 'Montserrat', sans-serif;
+  color: var(--dark-grey);
+  transition: color 0.3s ease-in-out;
+}
+.NavBar-Big ul a:hover {
+  color: var(--primary);
+}
