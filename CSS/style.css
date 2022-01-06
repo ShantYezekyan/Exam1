@@ -631,3 +631,22 @@ h3 {
   font-size: 14px;
   color: var(--primary);
 }
+.clients {
+  background-color: var(--background-light-grey);
+}
+.client-list {
+  display: grid;
+  grid-template-columns: repeat(5, auto);
+  justify-items: center;
+}
+.client-logo {
+  margin-top: 20px;
+}
+.client-logo img {
+  max-width: 120px;
+  opacity: 50%;
+  transition: all 0.2s ease-in-out;
+}
+.client-logo img:hover {
+  opacity: 1;
+}

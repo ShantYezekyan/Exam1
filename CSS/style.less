@@ -755,3 +755,28 @@ h3 {
         color: var(--primary);
     }
 }
+
+//------------------ Clients Section ----------------------------
+
+.clients {
+    background-color: var(--background-light-grey);
+}
+
+.client-list {
+    display: grid;
+    grid-template-columns: repeat(5, auto);
+    justify-items: center;
+}
+
+.client-logo {
+    margin-top: 20px;
+    img {
+        max-width: 120px;
+        opacity: 50%;
+        transition: all 0.2s ease-in-out;
+
+        &:hover {
+            opacity: 1;
+        }
+    }
+}
