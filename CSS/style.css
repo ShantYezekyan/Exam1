@@ -312,14 +312,14 @@ h6 {
   width: 100%;
   vertical-align: middle;
 }
-.card {
+.p-card {
   position: relative;
   overflow: hidden;
 }
-.card:hover .portfolio-card-overlay {
+.p-card:hover .portfolio-card-overlay {
   transform: translate(0, 0);
 }
-.card .portfolio-card-overlay {
+.p-card .portfolio-card-overlay {
   position: absolute;
   width: 100%;
   height: 100%;
@@ -336,11 +336,11 @@ h6 {
   align-items: center;
   flex-direction: column;
 }
-.card .portfolio-card-overlay h4 {
+.p-card .portfolio-card-overlay h4 {
   color: white;
   margin: 0;
 }
-.card .portfolio-card-overlay p {
+.p-card .portfolio-card-overlay p {
   font-weight: 100;
   font-size: 14px;
   margin-top: 20px;
@@ -471,10 +471,49 @@ h6 {
 .team_cards .card_info h5 {
   font-size: 15px;
   color: var(--light-grey);
+  transition: color 0.2s ease-in-out;
 }
 .team_cards .card_info p {
   font-size: 11px;
   color: #aaaaaa;
+}
+.team_cards .card_img:hover ~ .card_info > h5 {
+  color: var(--primary);
+}
+.team_cards .card_img {
+  position: relative;
+  overflow: hidden;
+}
+.team_cards .card_img:hover .team-card-overlay {
+  transform: translate(0, 0);
+}
+.team_cards .card_img .team-card-overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: var(--primary);
+  opacity: 0.9;
+  left: 0;
+  top: 0;
+  transform: translate(0, -100%);
+  transition-duration: 0.2s;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  column-gap: 20px;
+}
+.team_cards .card_img .team-card-overlay i {
+  height: 30px;
+  width: 30px;
+  text-align: center;
+  font-size: 15px;
+  line-height: 30px;
+  border: 1px solid white;
+}
+.team_cards .card_img .team-card-overlay i:hover {
+  color: var(--primary);
+  background-color: white;
 }
 .skills_section {
   background-color: var(--background-light-grey);
