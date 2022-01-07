@@ -237,6 +237,8 @@ hr {
     }
 }
 
+//------------------ Service Section ----------------------------
+
 .service_cards {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -919,3 +921,26 @@ h3 {
         }
     }
 }
+
+//------------------ Fixed Scroll-to-Top Button ----------------------------
+
+.scroll-to-top {
+    display: block;
+    position: fixed;
+    text-decoration: none;
+    color: white;
+    background-color: var(--primary);
+    text-align: center;
+    font-size: 20px;
+    z-index: 100;
+    bottom: 20px;
+    right: 40px;
+        
+    i {
+        width: 32px;
+        height: 32px;
+        line-height: 32px;
+    }
+}
+
+//-----------------------------------------------------------------------
