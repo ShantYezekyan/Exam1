@@ -20,6 +20,8 @@
     background: black;
 }
 
+//------------------ General Definitions----------------------------
+
 .container {
     min-width: 900px;
     max-width: 1200px;
@@ -163,7 +165,6 @@ h6 {
 }
 
 
-
 //------------------ Home Section ----------------------------
 
 .slide1 {
@@ -177,7 +178,6 @@ h6 {
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    // display: none;
     
     p {
         color: white;
@@ -186,7 +186,6 @@ h6 {
         margin: 10px;
         font-weight: 300;
     }
-    
 }
 
 .button-container {
@@ -306,7 +305,6 @@ h6 {
     grid-template-columns: 1fr 1fr 1fr 1fr;
     gap: 10px;
     margin-top: 30px;
-    
 
     .card {
         background-color: var(--background-light-grey);
@@ -381,7 +379,6 @@ h6 {
         width: 100%;
         vertical-align: middle;
     }
-    
 }
 
 .p-card {
@@ -1008,7 +1005,6 @@ h6 {
     padding: 10px 10px;
     color: white;
     background-color: var(--primary);
-    
 }
 
 .contact-info-title {
@@ -1184,6 +1180,7 @@ h6 {
         }
     }
 
+    //------------------- Navigation Bar for Small Screen ----------------------
 
     .NavBar-Small {
         padding: 10px 20px;
@@ -1254,6 +1251,7 @@ h6 {
 
 }
 
+// ---------------------------------------------------------------------------------------------
 
 @media only screen and (max-width: 780px) {
 
@@ -1286,6 +1284,7 @@ h6 {
 
     .client-list {
         grid-template-columns: repeat(3, 1fr);
+
         .client4 {
             display: none;
         }
@@ -1302,6 +1301,8 @@ h6 {
     }
     
 }
+
+// ---------------------------------------------------------------------------------------------
 
 @media only screen and (max-width: 540px) {
 
@@ -1327,5 +1328,4 @@ h6 {
     .team_cards {
         grid-template-columns: 1fr;
     }
-
 }
