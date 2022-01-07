@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
   font-family: 'Montserrat', sans-serif;
+  scroll-behavior: smooth;
 }
 :root {
   --primary: #ed5f5e;
@@ -719,4 +720,42 @@ h3 {
 .contact-info-text {
   display: inline-block;
   font-size: 12px;
+}
+.site-footer {
+  background-color: #2a2a2a;
+  padding: 20px 0;
+}
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.footer-info {
+  color: #909090;
+  font-size: 12px;
+}
+.footer-info a {
+  text-decoration: none;
+  color: var(--even-lighter-grey);
+  transition: color 0.3s ease-in-out;
+}
+.footer-info a:hover {
+  color: var(--primary);
+}
+.footer-icons a {
+  display: inline-block;
+  color: var(--even-lighter-grey);
+  text-decoration: none;
+  text-align: center;
+  font-size: 14px;
+  transition: all 0.2s ease-in-out;
+}
+.footer-icons a:hover {
+  background-color: var(--primary);
+  color: white;
+}
+.footer-icons a i {
+  width: 28px;
+  height: 28px;
+  line-height: 28px;
 }
