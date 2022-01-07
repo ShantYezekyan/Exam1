@@ -310,6 +310,40 @@ h6 {
 }
 .portfolio_cards img {
   width: 100%;
+  vertical-align: middle;
+}
+.card {
+  position: relative;
+  overflow: hidden;
+}
+.card:hover .portfolio-card-overlay {
+  transform: translate(0, 0);
+}
+.card .portfolio-card-overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: var(--primary);
+  opacity: 0.9;
+  left: 0;
+  top: 0;
+  transform: translate(0, -100%);
+  transition-duration: 0.2s;
+  color: white;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.card .portfolio-card-overlay h4 {
+  color: white;
+  margin: 0;
+}
+.card .portfolio-card-overlay p {
+  font-weight: 100;
+  font-size: 14px;
+  margin-top: 20px;
 }
 .promo {
   display: flex;
