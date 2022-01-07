@@ -12,6 +12,7 @@
 </head>
 
 <body>
+    <!-- Navigation Bar for big screens -->
     <nav class="NavBar-Big">
         <div class="logo_container">
             <a href="#home">
@@ -30,13 +31,18 @@
         </ul>
     </nav>
 
+    <!-- Main Content of the Website -->
+
     <main>
         <!-- Home Section -->
         <section id="home">
             <div class="slide1">
                 <h1>Welcome to N.Agency</h1>
                 <p>#1 DIGITAL SOLUTION IN THE CITY</p>
-                <a href="#portfolio">VIEW PROJECTS</a>
+                <div class="button-container">
+                    <a class="view-projects-btn" href="#portfolio">VIEW PROJECTS</a>
+                    <div class="grey-overlay"></div>
+                </div>
             </div>
 
             <div class="slide2">
@@ -134,23 +140,47 @@
                 </header>
 
                 <div class="portfolio_cards">
-                    <div class="card">
+                    <div class="p-card">
                         <img src="./images/portfolio1.jpeg" alt="portfolio1">
+                        <div class="portfolio-card-overlay">
+                            <h4>Project Name</h4>
+                            <p>Branding</p>
+                        </div>
                     </div>
-                    <div class="card">
+                    <div class="p-card">
                         <img src="./images/portfolio2.jpeg" alt="portfolio2">
+                        <div class="portfolio-card-overlay">
+                            <h4>Project Name</h4>
+                            <p>Graphic, Web Design</p>
+                        </div>
                     </div>
-                    <div class="card">
+                    <div class="p-card">
                         <img src="./images/portfolio3.jpeg" alt="portfolio3">
+                        <div class="portfolio-card-overlay">
+                            <h4>Project Name</h4>
+                            <p>Video, Web Design</p>
+                        </div>
                     </div>
-                    <div class="card">
+                    <div class="p-card">
                         <img src="./images/portfolio4.jpeg" alt="portfolio4">
+                        <div class="portfolio-card-overlay">
+                            <h4>Project Name</h4>
+                            <p>Video, Web Design</p>
+                        </div>
                     </div>
-                    <div class="card">
+                    <div class="p-card">
                         <img src="./images/portfolio5.jpeg" alt="portfolio5">
+                        <div class="portfolio-card-overlay">
+                            <h4>Project Name</h4>
+                            <p>Branding, Graphic</p>
+                        </div>
                     </div>
-                    <div class="card">
+                    <div class="p-card">
                         <img src="./images/portfolio6.jpeg" alt="portfolio6">
+                        <div class="portfolio-card-overlay">
+                            <h4>Project Name</h4>
+                            <p>Branding, Graphic</p>
+                        </div>
                     </div>
 
                 </div>
@@ -175,7 +205,10 @@
                     article express fortune demands own charmed. About are are money ask how seven.
                 </p>
 
-                <a href="#contact">CONTACT US</a>
+                <div class="promo_button-container">
+                    <a class="contact_us-btn" href="#contact">CONTACT US</a>
+                    <div class="grey-overlay"></div>
+                </div>
             </div>
 
             <div class="promo_img">
@@ -199,7 +232,7 @@
         <!-- Team Section -->
         <section id="team" class="padding-80-50 container">
             <header class="section_header">
-                <h2>Service</h2>
+                <h2>Team Members</h2>
                 <hr>
                 <p>
                     Cordially convinced did incommode existence put out suffering certainly. Besides another and saw
@@ -208,9 +241,14 @@
             </header>
 
             <div class="team_cards">
-                <div class="card">
+                <div class="t-card">
                     <div class="card_img">
                         <img src="./images/team1.jpeg" alt="Team Member">
+                        <div class="team-card-overlay">
+                            <i class="fa fa-twitter"></i>
+                            <i class="fa fa-facebook"></i>
+                            <i class="fa fa-google-plus"></i>
+                        </div>
                     </div>
                     <div class="card_info">
                         <h5>Stephen Joe</h5>
@@ -218,9 +256,14 @@
                     </div>
                 </div>
 
-                <div class="card">
+                <div class="t-card">
                     <div class="card_img">
                         <img src="./images/team2.jpeg" alt="Team Member">
+                        <div class="team-card-overlay">
+                            <i class="fa fa-twitter"></i>
+                            <i class="fa fa-facebook"></i>
+                            <i class="fa fa-google-plus"></i>
+                        </div>
                     </div>
                     <div class="card_info">
                         <h5>Laura Doe</h5>
@@ -228,9 +271,14 @@
                     </div>
                 </div>
 
-                <div class="card">
+                <div class="t-card">
                     <div class="card_img">
                         <img src="./images/team3.jpeg" alt="Team Member">
+                        <div class="team-card-overlay">
+                            <i class="fa fa-twitter"></i>
+                            <i class="fa fa-facebook"></i>
+                            <i class="fa fa-google-plus"></i>
+                        </div>
                     </div>
                     <div class="card_info">
                         <h5>Andy Doe</h5>
@@ -238,9 +286,14 @@
                     </div>
                 </div>
 
-                <div class="card">
+                <div class="t-card">
                     <div class="card_img">
                         <img src="./images/team4.jpeg" alt="Team Member">
+                        <div class="team-card-overlay">
+                            <i class="fa fa-twitter"></i>
+                            <i class="fa fa-facebook"></i>
+                            <i class="fa fa-google-plus"></i>
+                        </div>
                     </div>
                     <div class="card_info">
                         <h5>Inani Joe</h5>
@@ -574,7 +627,10 @@
                     </div>
                     <textarea class="message" placeholder="Your Message" rows="12"></textarea>
 
-                    <button>Submit</button>
+                    <div class="submit-container">
+                        <button>Submit</button>
+                        <div class="grey-overlay"></div>
+                    </div>
 
                 </form>
 
