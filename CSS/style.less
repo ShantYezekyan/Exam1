@@ -19,6 +19,46 @@
     background: black;
 }
 
+.container {
+    min-width: 900px;
+    max-width: 1200px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+hr {
+    width: 30px;
+    height: 1px;
+    background-color: var(--dark-grey);
+    margin: 15px auto;
+    border: none;
+}
+
+.padding-80 {
+    padding: 80px 0;
+}
+
+.padding-80-50 {
+    padding-top: 80px;
+    padding-bottom: 50px;
+}
+
+.section_header {
+    padding: 0 250px;
+
+    p {
+        font-family: 'Lato',sans-serif;
+        color: var(--even-lighter-grey);
+        font-style: italic;
+        font-size: 14px;
+        text-align: center;
+        font-weight: 100;
+        line-height: 1.8em;
+    }
+}
+
+//------------------ Headings ----------------------------
+
 h1 {
     font-size: 51px;
     color: white;
@@ -28,6 +68,34 @@ h1 {
     font-weight: 400;
     margin: 10px;
     padding: 8px 0;
+}
+
+h2 {
+    font-size: 26px;
+    color: var(--dark-grey);
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 500;
+    font-family: 'Montserrat',sans-serif;
+    margin: 10px 0;
+}
+
+h3 {
+    font-family: 'Montserrat',sans-serif;
+    text-transform: uppercase;
+    font-size: 26px;
+    margin: 10px 0;
+    color: var(--dark-grey);
+    font-weight: 100;
+}
+
+h4 {
+    font-family: 'Montserrat',sans-serif;
+    font-weight: 100;
+    text-transform: uppercase;
+    font-size: 18px;
+    margin: 35px 0 10px;
+    color: var(--dark-grey);
 }
 
 h6 {
@@ -40,6 +108,13 @@ h6 {
     margin-bottom: 15px;
 }
 
+// ----------------------------------------------------------------------
+
+
+
+
+
+//------------------ Navigation Bar for Big Screens ----------------------------
 .NavBar-Big {
     padding: 0 50px;
     background-color: white;
@@ -73,6 +148,8 @@ h6 {
         }
     }
 }
+
+//------------------ Home Section ----------------------------
 
 .slide1 {
     background-image: url(../images/slide1.jpeg);
@@ -198,50 +275,6 @@ h6 {
 
 }
 
-.container {
-    min-width: 900px;
-    max-width: 1200px;
-    padding: 0 15px;
-    margin: 0 auto;
-}
-
-h2 {
-    font-size: 26px;
-    color: var(--dark-grey);
-    text-transform: uppercase;
-    text-align: center;
-    font-weight: 500;
-    font-family: 'Montserrat',sans-serif;
-    margin: 10px 0;
-}
-
-hr {
-    width: 30px;
-    height: 1px;
-    background-color: var(--dark-grey);
-    margin: 15px auto;
-    border: none;
-}
-
-.padding-80 {
-    padding: 80px 0;
-}
-
-
-.section_header {
-    padding: 0 250px;
-
-    p {
-        font-family: 'Lato',sans-serif;
-        color: var(--even-lighter-grey);
-        font-style: italic;
-        font-size: 14px;
-        text-align: center;
-        font-weight: 100;
-        line-height: 1.8em;
-    }
-}
-
 //------------------ Service Section ----------------------------
 
 .service_cards {
@@ -278,14 +311,7 @@ hr {
     }
 }
 
-h4 {
-    font-family: 'Montserrat',sans-serif;
-    font-weight: 100;
-    text-transform: uppercase;
-    font-size: 18px;
-    margin: 35px 0 10px;
-    color: var(--dark-grey);
-}
+//------------------ Portfolio Section ----------------------------
 
 #portfolio {
     background-color: var(--background-light-grey);
@@ -333,14 +359,7 @@ h4 {
     
 }
 
-h3 {
-    font-family: 'Montserrat',sans-serif;
-    text-transform: uppercase;
-    font-size: 26px;
-    margin: 10px 0;
-    color: var(--dark-grey);
-    font-weight: 100;
-}
+//------------------ Promo Section ----------------------------
 
 .promo {
     display: flex;
@@ -390,6 +409,8 @@ h3 {
         width: 100%;
     }
 }
+
+//------------------ Video Section ----------------------------
 
 .video_bgm {
     background-image: url(../images/video-bg.jpeg);
@@ -444,10 +465,7 @@ h3 {
     }
 }
 
-.padding-80-50 {
-    padding-top: 80px;
-    padding-bottom: 50px;
-}
+//------------------ Team Section ----------------------------
 
 .team_cards {
     display: grid;
@@ -480,6 +498,8 @@ h3 {
         }
     }
 }
+
+//------------------ Skills Section ----------------------------
 
 .skills_section {
     background-color: var(--background-light-grey);
