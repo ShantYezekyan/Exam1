@@ -12,6 +12,10 @@
   --background-light-grey: #f8f8f8;
   --skillBar: #f0f0f0;
 }
+::selection {
+  color: white;
+  background: black;
+}
 h1 {
   font-size: 51px;
   color: white;
