@@ -133,6 +133,9 @@ h6 {
 .NavBar-Big ul a:hover {
   color: var(--primary);
 }
+.NavBar-Small {
+  display: none;
+}
 .slide1 {
   background-image: url(../images/slide1.jpeg);
   background-repeat: no-repeat;
@@ -886,6 +889,9 @@ h6 {
   background-color: var(--primary-dark);
 }
 @media only screen and (max-width: 990px) {
+  .NavBar-Big {
+    display: none;
+  }
   .container {
     min-width: 500px;
     max-width: 650px;
@@ -944,6 +950,62 @@ h6 {
   }
   .client-list .client5 {
     display: none;
+  }
+  .NavBar-Small {
+    padding: 10px 20px;
+    z-index: 10000;
+    top: 0;
+    left: 0;
+    right: 0;
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    border-bottom: 1px solid #f7f7f7;
+  }
+  .NavBar-Small input {
+    visibility: hidden;
+  }
+  .NavBar-Small input:checked ~ .NavBar-Small-Menu {
+    display: block;
+    transform: translate(0, 59px);
+  }
+  .NavBar-Small label {
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    font-size: 20px;
+  }
+  .NavBar-Small label:hover {
+    cursor: pointer;
+  }
+  .NavBar-Small-Menu {
+    position: absolute;
+    background-color: white;
+    width: 100%;
+    top: 0;
+    left: 0;
+    transform: translate(0, -100%);
+    transition-duration: 0.5s;
+  }
+  .NavBar-Small-Menu ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+  }
+  .NavBar-Small-Menu ul a {
+    display: block;
+    padding: 15px;
+    font-size: 13px;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: var(--dark-grey);
+    transition: color 0.3s ease-in-out;
+    border-bottom: 1px solid #f7f7f7;
+  }
+  .NavBar-Small-Menu ul a:hover {
+    color: var(--primary);
   }
 }
 @media only screen and (max-width: 780px) {
